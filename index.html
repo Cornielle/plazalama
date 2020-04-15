@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" 
+    href="css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto" href="#">
+                <img src="img/9bKpQ2RS_400x400.jpg" width="70" height="70">
+                Prueba
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        </div>
+    </nav>
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    Prueba No.1: Enviar parametros a una url
+                    <form id="form">
+                        <div class="form-group">
+                            <input type="text" id="url" 
+                            placeholder="Escribir url o para testear colocar enviar.php" 
+                            class="form-control">
+                            </div>
+                            <div class="form-group">
+                            <input type="text" id="tienda" 
+                            placeholder="Tienda" 
+                            class="form-control">
+                            </div>
+                            <div class="form-group">
+                            <input type="text" id="tipo" 
+                            placeholder="Tipo" 
+                            class="form-control">
+                            </div>
+                            <div class="form-group">
+                            <input type="text" id="serie" 
+                            placeholder="Serie" 
+                            class="form-control">
+                            </div>
+                        <button id="send" class="btn btn-primary btn-block text-center">
+                            Enviar
+                        </button>
+                    </form>
+                    <div class="card my-4" id="result">
+                        <div class="card-body">
+                            <ul id="container">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    Prueba No.2: Enviar ID y tipo de producto
+                    <form id="form2">
+                        <div class="form-group">
+                            <input type="text" id="url2" 
+                            placeholder="Escribir url " 
+                            class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="ID" 
+                            placeholder="Escribir ID" 
+                            class="form-control">
+                        </div>
+                       <div class="form-group">
+                          <select id="product" class="form-control">
+                            <option value="electro">electro</option>
+                            <option value="super">super</option>
+                          </select>
+                        </div>
+                        <button id="send2" class="btn btn-primary btn-block text-center">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>
